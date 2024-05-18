@@ -1,0 +1,8 @@
+name: Output of Gihub object
+on: workflow_dispatch
+jobs:
+  My_Output_Job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Github Context
+      - run: echo "${{ toJSON(github) }}"
